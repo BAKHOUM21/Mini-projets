@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulaire et Calcul de Moyenne</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/formulaire2.css">
+        <link rel="stylesheet" href="C:/Users/Admin/Desktop/ACS/Projet perso/bootstrap4/bootstrap.min.css">   
+        <style>
+            label{display: inline-block;min-width: 200px;font: 1em sans-serif;};
+        </style>
+    </head>
+    
+    <body>
+          <center>
+            <h1 class="pt-4"><span class='text-white'> Veuillez remplir ce Formulaire</span></h1><br>
+            <form method="GET" action="">
+                <fieldset>
+                <table>
+                <tr>
+                    <td><label for='note1' style="font-size: 20px;">Entrez note1 : </label></td>
+                    <td><input type='number' name='note1' id='note1' maxlength='20' required></td>
+                    <td><span id='missNote1'></span><br></td>
+                </tr>
+                <tr>
+                    <td><label for='note2'  style="font-size: 20px;">Entrez note2 :</label></td>
+                    <td><input type='number' name='note2' id='note2' required><br></td>
+                    <td><span id='missNote2'></span><br></td>
+                </tr>
+                <tr>
+                    <td><label for='note3'  style="font-size: 20px;">Entrez note3: </label></td>
+                    <td><input type='number' name='note3' id='note3' required><br></td>
+                    <td><span id='missNote3'></span><br></td>
+                </tr>
+                <tr>   
+                    <td></td>
+                    <td style="padding-top: 50px;"><input type='submit' value='Soumettre' id='bouton_envoi' onclick="calculer_moyenne()"> </td>
+                </tr>
+                </table>
+            </form>
+        </center>  
+        <!-- Notre lien externe qui atterit sur notre code javascript -->
+        <script src="moyenne.js"></script>
+    </body>
+</html>

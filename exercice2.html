@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Exercice2</title>
+</head>
+<body>
+    <script>
+        var i,j,n_diviseurs;
+                     
+                     for(i=2;i<=100;i++)
+  
+                     {   n_diviseurs=0;
+  
+                         for(j=1;j<=i;j++)
+                         {
+                            // s'il existe un nombre qui divise un autre nombre different
+                           if(i%j==0)
+                           n_diviseurs=n_diviseurs+1;
+                          }
+                        // si le nombre n'admet que 2 diviseurs
+                          if(n_diviseurs<=2)
+                          document.write(i+" - ");
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La table de multiplication</title>
+</head>
+<body>
+    <script>
+        /*centrer le tableau*/
+        document.write("<center>");
+        
+        /* Titre pour le tableau */
+        document.write("<caption> Table de multiplication</caption>");
+        
+        /* Créer un tableau*/
+        document.write("<table width='60%' border=1>");
+        
+        
+        /* Créer la première ligne */
+        document.write("<tr><td bgcolor='#FFff00'  align='center'><strong>"+"x"+"</strong></td>");
+        
+        for(var i=1;i<=10;i++)
+        {
+        document.write("<td bgcolor='silver' align='center'><strong>"+i+"</strong></td>");
+        }
+        document.write("</tr>");
+        /* créer les autres lignes*/
+        for(var i=1;i<11;i++)
+        {
+            /* Créer la ligne numéro i*/
+            document.write("<tr>");
+            document.write("<td bgcolor='silver'  align='center'><strong>"+i+"</strong></td>");
+                for(var j=1;j<=10;j++)
+                {
+                  /* Créer la colonne numéro j*/
+            document.write("<td align='center' bgcolor='orange'>",i+"x"+j+"="+i*j,"</td>");
+            }
+            document.write("</tr>");
+        }
+        document.write("</table>");
+        // var a= prompt('Donner un entier');
+        // var b= prompt('Donner un second entier');
+        // alert("Le produit des deux entiers saisis vaut:\n"+a*b);
+    </script>
+</body>
+</html>

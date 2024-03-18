@@ -1,0 +1,23 @@
+form{
+    background-color:gray;
+    height: 300px;
+    width: 500px;
+}
+#bouton_envoi
+{
+    margin-left: 80px;
+    font-family: bold;
+    font-size: 20px;
+} 
+td
+{
+    padding-top: 20px;
+}
+label
+{
+    color:azure;
+}
+fieldset
+{
+    padding-top: 40px; color: aliceblue;
+}
